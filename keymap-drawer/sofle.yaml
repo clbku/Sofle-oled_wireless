@@ -1,20 +1,9 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', +, CAPSLOCK, Q, W, E, R, T, Y, U, I, O, P, _, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LEFT GUI,
-    Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LEFT SHIFT, LALT, LCTRL, lower, SPACE, ENTER, raise, BACKSPACE, DELETE, '?']
+  default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, TAB, Q, W, E, R, T, Y, U, I, O, P, DELETE, CAPSLOCK, A, S, D, F, G, H, J, K, L, ;, '''',
+    LSHFT, Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LCTRL, LALT, LEFT COMMAND, lower, RET, SPACE, raise, RCTRL, RALT, LCMD]
   lower:
   - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - '='
   - F1
   - F2
   - F3
@@ -26,6 +15,17 @@ layers:
   - F9
   - F10
   - F11
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - F12
   - TAB
   - '!'
@@ -40,9 +40,9 @@ layers:
   - )
   - '|'
   - {t: ▽, type: trans}
-  - '='
+  - {t: ▽, type: trans}
   - '-'
-  - KP PLUS
+  - '='
   - '{'
   - '}'
   - {t: ▽, type: trans}
@@ -57,7 +57,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - '&maximize_window'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -82,9 +82,9 @@ layers:
   - CMENU
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PG UP
   - {t: ▽, type: trans}
-  - UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
   - {t: ▽, type: trans}
@@ -94,9 +94,9 @@ layers:
   - LSHFT
   - {t: ▽, type: trans}
   - CLCK
-  - PG DN
   - LEFT
-  - DOWN
+  - DOWN ARROW
+  - UP ARROW
   - RIGHT
   - DEL
   - BSPC
@@ -116,9 +116,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&split_terminal_horizontal'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&split_terminal_vertical'
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
