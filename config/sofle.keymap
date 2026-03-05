@@ -31,22 +31,22 @@
         split_terminal_vertical: split_terminal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp LCTRL &kp LALT &kp N5>;
+            bindings = <&kp LS(LC(LA(N5)))>;
             label = "SPLIT_TERMINAL";
-        };
-
-        split_terminal_horizontal: split_terminal_horizontal {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp LCTRL &kp LALT &kp SQT>;
-            label = "SPLIT_TERMINAL_HORIZONTAL";
         };
 
         maximize_window: maximize_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_ALT &kp ENTER>;
+            bindings = <&kp LA(LC(ENTER))>;
             label = "MAXIMIZE_WINDOW";
+        };
+
+        split_terminal_horizontal: split_terminal_horizontal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(LA(SQT)))>;
+            label = "SPLIT_TERMINAL_HORIZONTAL";
         };
     };
 
